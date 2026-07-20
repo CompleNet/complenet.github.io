@@ -29,6 +29,26 @@ Static HTML/CSS site — no build step, no framework.
   same change to every page for consistency.
 - Colors use CSS variables (`--blue` UR navy `#001E5F`, `--gold` UR gold `#FFD100`) defined at the top of `style.css`.
 
+## Contributing — before you edit
+
+**Multiple people commit to this repo (sometimes directly on GitHub), so always sync before editing:**
+
+```
+git fetch origin        # see if anything is new
+git pull --no-rebase    # merge in remote changes before you start
+```
+
+Then make your changes, and when done:
+
+```
+git add -A
+git commit -m "your message"
+git push
+```
+
+If you forget to pull first and your push is rejected, run `git pull --no-rebase` to merge, resolve any
+conflicts, then push again.
+
 ## Deployment
 
 Pushing to the `main` branch publishes the site automatically via GitHub Pages (root of `main`).
