@@ -472,6 +472,45 @@ img { display: block; max-width: 100%; }
   line-height: 1.4;
 }
 
+/* Keynote card socials */
+.speaker-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+.speaker-socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  color: var(--text-mid);
+  background: rgba(0, 0, 0, 0.04);
+  transition: color 0.15s ease, background 0.15s ease, transform 0.15s ease;
+}
+.speaker-socials a:hover {
+  color: var(--blue);
+  background: rgba(0, 51, 160, 0.08);
+  transform: translateY(-1px);
+}
+.speaker-socials svg {
+  width: 15px;
+  height: 15px;
+  display: block;
+}
+
+/* Keynote rollout flag: set data-revealed="true" on a card in speakers.html
+   to publish it, "false" to hold it back. Plain HTML attribute, no JS —
+   works identically for browsers, crawlers, and link-preview bots. */
+.speaker-card[data-revealed="false"] {
+  display: none;
+}
+
+
 /* ═══════════════════════════════════════════════
    PLACEHOLDER  (program, registration)
    ═══════════════════════════════════════════════ */
