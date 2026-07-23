@@ -441,6 +441,15 @@ img { display: block; max-width: 100%; }
   border: 3px solid var(--border);
 }
 .speaker-avatar svg { width: 44px; height: 44px; color: var(--gray); }
+
+/* Keynote speakers page: larger headshots than the compact committee avatars */
+.speakers-grid .speaker-avatar {
+  width: 140px;
+  height: 140px;
+  margin-bottom: 24px;
+}
+.speakers-grid .speaker-avatar svg { width: 64px; height: 64px; }
+
 .tba-badge {
   display: inline-block;
   background: var(--gold-pale);
