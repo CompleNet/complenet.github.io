@@ -1110,6 +1110,8 @@ footer {
 .contrib-card ul { list-style: none; }
 .contrib-card li { font-size: 0.88rem; color: var(--text-mid); padding: 6px 0 6px 17px; position: relative; line-height: 1.55; }
 .contrib-card li::before { content: ''; position: absolute; left: 0; top: 13px; width: 6px; height: 6px; background: var(--gold); border-radius: 50%; }
+/* Links sit inside running text here, so colour alone is not enough of a cue. */
+.contrib-card a { text-decoration: underline; text-underline-offset: 2px; }
 
 .submit-steps { counter-reset: step; list-style: none; max-width: 720px; margin: 0 auto; }
 .submit-steps li {
