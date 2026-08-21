@@ -1173,6 +1173,25 @@ footer {
 .placeholder-box + .dates-table.dates-centered { margin-top: 40px; }
 .cfp-contact { text-align: center; margin-top: 32px; font-size: 0.92rem; color: var(--text-mid); }
 .cfp-contact a { font-weight: 600; }
+
+/* ═══ CONTACT ═══ */
+.contact-card { max-width: 640px; margin: 0 auto; text-align: center; }
+.contact-email {
+  display: inline-block;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--blue);
+  background: var(--off-white);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--gold);
+  border-radius: var(--radius);
+  padding: 16px 28px;
+  margin-bottom: 8px;
+  word-break: break-all;
+}
+.contact-email:hover { color: var(--gold-dark); }
+.contact-topics { margin-top: 48px; }
+.contact-social { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
 .cfp-acknowledgement {
   max-width: 720px;
   margin: 0 auto;
