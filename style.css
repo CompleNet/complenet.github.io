@@ -1225,3 +1225,18 @@ footer {
 }
 @media (max-width: 760px) { .topics-cols { column-count: 2; } }
 @media (max-width: 480px) { .topics-cols { column-count: 1; } }
+
+/* Author policies — short bullets, no prose blocks */
+.policy-list {
+  max-width: 720px;
+  margin: 0 auto;
+  padding-left: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: var(--text-mid);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+.policy-list li::marker { color: var(--gold-dark); }
+.policy-list strong { color: var(--text); }
