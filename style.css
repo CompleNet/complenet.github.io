@@ -187,7 +187,7 @@ img { display: block; max-width: 100%; }
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url('Images/RochesterNetwork.png');
+  background-image: url('Images/network-texture.png');
   background-size: cover;
   background-position: center;
   opacity: 0.10;
@@ -235,7 +235,7 @@ img { display: block; max-width: 100%; }
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url('Images/RochesterNetwork.png');
+  background-image: url('Images/network-texture.png');
   background-size: cover;
   background-position: center 60%;
   opacity: 0.16;
