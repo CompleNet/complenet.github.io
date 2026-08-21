@@ -576,6 +576,9 @@ img { display: block; max-width: 100%; }
 .dates-table tr:last-child td { border-bottom: none; }
 .dates-table tr:nth-child(even) td { background: var(--off-white); }
 .date-val { color: var(--blue); font-weight: 600; }
+.date-aoe { color: var(--text-mid); font-weight: 500; white-space: nowrap; }
+
+.key-dates-actions { display: flex; justify-content: center; margin-top: 8px; }
 
 .cfp-note {
   background: rgba(0, 59, 113, 0.06);
@@ -702,6 +705,22 @@ a.edition-card:hover {
 .edition-arrow { color: var(--gray); font-size: 0.9rem; flex-shrink: 0; }
 a.edition-card:hover .edition-arrow { color: var(--gold-dark); }
 
+/* Edition badges — "Canceled" and "Archived" share the same shape */
+.edition-tag {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 1px 6px;
+  border-radius: 4px;
+  margin-left: 6px;
+  vertical-align: middle;
+  background: var(--gray-light);
+  border: 1px solid var(--border);
+  color: var(--text-mid);
+}
+
 /* Cancelled edition variant */
 .edition-cancelled .edition-year  { color: var(--gray); }
 .edition-cancelled .edition-bar   { background: var(--border); }
@@ -776,6 +795,20 @@ footer {
 }
 .social-link svg { width: 20px; height: 20px; flex-shrink: 0; }
 
+/* Dates, venue and contact address — on every page, copyable as plain text */
+.footer-meta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.72);
+}
+.footer-meta .sep { opacity: 0.35; }
+.footer-meta a { color: var(--gold); }
+.footer-meta a:hover { color: var(--white); text-decoration: underline; }
+
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   padding-top: 20px;
@@ -841,7 +874,7 @@ footer {
 
   /* ── Program glance table ── */
   .glance-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
-  .glance-table  { min-width: 520px; }
+  .glance-table  { min-width: 660px; }
 
   /* ── Placeholders ── */
   .placeholder-box { padding: 48px 24px; }
@@ -1025,6 +1058,16 @@ footer {
   font-weight: 600;
   letter-spacing: 0.03em;
 }
+.glance-date {
+  display: block;
+  font-weight: 500;
+  font-size: 0.70rem;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  color: rgba(255, 255, 255, 0.72);
+  margin-top: 2px;
+}
+.tag-keynote { background: rgba(255,209,0,0.30); color: #6b5000; }
 .tag-talk   { background: rgba(0,59,113,0.10); color: var(--blue); }
 .tag-light  { background: rgba(255,209,0,0.22); color: #7a5c00; }
 .tag-poster { background: rgba(0,150,100,0.12); color: #006644; }
@@ -1127,6 +1170,7 @@ footer {
 }
 
 .dates-table.dates-centered { max-width: 560px; margin: 0 auto; }
+.placeholder-box + .dates-table.dates-centered { margin-top: 40px; }
 .cfp-contact { text-align: center; margin-top: 32px; font-size: 0.92rem; color: var(--text-mid); }
 .cfp-contact a { font-weight: 600; }
 .cfp-acknowledgement {
