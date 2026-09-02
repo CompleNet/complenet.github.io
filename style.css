@@ -703,11 +703,11 @@ a.edition-card:hover .edition-arrow { color: var(--gold-dark); }
   color: var(--text-mid);
 }
 
-/* Cancelled edition variant */
-.edition-cancelled .edition-year  { color: var(--gray); }
-.edition-cancelled .edition-bar   { background: var(--border); }
-.edition-cancelled .edition-place { color: var(--gray); }
-.edition-cancelled .edition-tag {
+/* Canceled edition variant */
+.edition-canceled .edition-year  { color: var(--gray); }
+.edition-canceled .edition-bar   { background: var(--border); }
+.edition-canceled .edition-place { color: var(--gray); }
+.edition-canceled .edition-tag {
   display: inline-block;
   background: #FFF3F3;
   border: 1px solid #FFCCCC;
