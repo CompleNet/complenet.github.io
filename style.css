@@ -96,6 +96,8 @@ img { display: block; max-width: 100%; }
   background: var(--blue);
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.30);
 }
+/* fill the bar's height so nav content centers vertically within it */
+#navbar .container { height: 100%; }
 .nav-inner {
   height: 100%;
   display: flex;
