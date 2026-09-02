@@ -1186,16 +1186,18 @@ footer {
 .contact-card { max-width: 640px; margin: 0 auto; text-align: center; }
 .contact-email {
   display: inline-block;
-  font-size: 1.35rem;
+  max-width: 100%;
+  box-sizing: border-box;
+  font-size: clamp(1rem, 4.2vw, 1.35rem);
   font-weight: 700;
   color: var(--blue);
   background: var(--off-white);
   border: 1px solid var(--border);
   border-left: 3px solid var(--gold);
   border-radius: var(--radius);
-  padding: 16px 28px;
+  padding: 16px 22px;
   margin-bottom: 8px;
-  word-break: break-all;
+  overflow-wrap: anywhere;
 }
 .contact-email:hover { color: var(--gold-dark); }
 .contact-topics { margin-top: 48px; }
@@ -1210,6 +1212,7 @@ footer {
 .contact-social-item svg {
   width: 56px;
   height: 56px;
+  flex-shrink: 0;
   color: var(--blue);
   transition: color var(--trans), transform var(--trans);
 }
@@ -1217,17 +1220,21 @@ footer {
 /* handle styled to match .contact-email */
 .contact-handle {
   display: inline-block;
-  font-size: 1.05rem;
+  max-width: 100%;
+  box-sizing: border-box;
+  font-size: clamp(0.9rem, 3.6vw, 1.05rem);
   font-weight: 700;
   color: var(--blue);
   background: var(--off-white);
   border: 1px solid var(--border);
   border-left: 3px solid var(--gold);
   border-radius: var(--radius);
-  padding: 12px 22px;
+  padding: 12px 18px;
+  overflow-wrap: anywhere;
   transition: color var(--trans);
 }
-.contact-social-item:hover .contact-handle { color: var(--gold-dark); }
+.contact-social-item:hover .contact-handle,
+.contact-social-item:hover .contact-email { color: var(--gold-dark); }
 .cfp-acknowledgement {
   max-width: 720px;
   margin: 0 auto;
