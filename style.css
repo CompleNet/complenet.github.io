@@ -811,20 +811,6 @@ footer {
 }
 .social-link svg { width: 20px; height: 20px; flex-shrink: 0; }
 
-/* Dates, venue and contact address — on every page, copyable as plain text */
-.footer-meta {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  flex-wrap: wrap;
-  font-size: 0.88rem;
-  color: rgba(255, 255, 255, 0.72);
-}
-.footer-meta .sep { opacity: 0.35; }
-.footer-meta a { color: var(--gold); }
-.footer-meta a:hover { color: var(--white); text-decoration: underline; }
-
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   padding-top: 20px;
