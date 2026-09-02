@@ -1197,7 +1197,35 @@ footer {
 }
 .contact-email:hover { color: var(--gold-dark); }
 .contact-topics { margin-top: 48px; }
-.contact-social { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+.contact-social { display: flex; justify-content: center; gap: 48px; flex-wrap: wrap; align-items: flex-start; }
+.contact-social-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+}
+.contact-social-item svg {
+  width: 56px;
+  height: 56px;
+  color: var(--blue);
+  transition: color var(--trans), transform var(--trans);
+}
+.contact-social-item:hover svg { color: var(--gold-dark); transform: translateY(-3px); }
+/* handle styled to match .contact-email */
+.contact-handle {
+  display: inline-block;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--blue);
+  background: var(--off-white);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--gold);
+  border-radius: var(--radius);
+  padding: 12px 22px;
+  transition: color var(--trans);
+}
+.contact-social-item:hover .contact-handle { color: var(--gold-dark); }
 .cfp-acknowledgement {
   max-width: 720px;
   margin: 0 auto;
