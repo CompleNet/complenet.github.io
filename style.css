@@ -195,18 +195,6 @@ img { display: block; max-width: 100%; }
   pointer-events: none;
 }
 .page-header .container { position: relative; z-index: 1; }
-.page-header-badge {
-  display: inline-block;
-  background: var(--gold);
-  color: var(--blue-dark);
-  font-size: 0.70rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  padding: 5px 14px;
-  border-radius: 20px;
-  margin-bottom: 18px;
-}
 .page-header h1 {
   font-size: clamp(2rem, 5vw, 3.2rem);
   color: var(--white);
@@ -265,23 +253,6 @@ img { display: block; max-width: 100%; }
   padding: 80px 0 96px;
   max-width: 720px;
 }
-.hero-logos {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  margin-bottom: 40px;
-  flex-wrap: wrap;
-}
-.hero-logos img {
-  height: 42px;
-  filter: brightness(0) invert(1);
-  object-fit: contain;
-}
-.hero-logos .sep {
-  width: 1px;
-  height: 40px;
-  background: rgba(255, 255, 255, 0.25);
-}
 .hero-badge {
   display: inline-flex;
   align-items: center;
@@ -296,15 +267,6 @@ img { display: block; max-width: 100%; }
   border-radius: 20px;
   margin-bottom: 22px;
 }
-.hero-title {
-  font-size: clamp(2.8rem, 8vw, 5.2rem);
-  color: var(--white);
-  font-weight: 800;
-  line-height: 1.05;
-  letter-spacing: -0.025em;
-  margin-bottom: 18px;
-}
-.hero-title span { color: var(--gold); }
 .hero-subtitle {
   font-size: clamp(1rem, 2.5vw, 1.3rem);
   color: rgba(255, 255, 255, 0.80);
@@ -502,7 +464,7 @@ img { display: block; max-width: 100%; }
   margin-top: 12px;
   flex-wrap: wrap;
 }
-.speaker-socials a {
+.speaker-social {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -513,12 +475,12 @@ img { display: block; max-width: 100%; }
   background: rgba(0, 0, 0, 0.04);
   transition: color 0.15s ease, background 0.15s ease, transform 0.15s ease;
 }
-.speaker-socials a:hover {
+.speaker-social:hover {
   color: var(--blue);
   background: rgba(0, 51, 160, 0.08);
   transform: translateY(-1px);
 }
-.speaker-socials svg {
+.speaker-social svg {
   width: 15px;
   height: 15px;
   display: block;
@@ -593,6 +555,8 @@ img { display: block; max-width: 100%; }
 .key-dates-actions { display: flex; justify-content: center; margin-top: 8px; }
 
 .cfp-note {
+  max-width: 720px;
+  margin: 24px auto;
   background: rgba(0, 59, 113, 0.06);
   border-left: 3px solid var(--blue);
   border-radius: 0 var(--radius) var(--radius) 0;
@@ -825,7 +789,6 @@ footer {
   color: rgba(255, 255, 255, 0.32);
   flex-wrap: wrap;
 }
-.footer-bottom .sep { opacity: 0.4; }
 
 /* ═══════════════════════════════════════════════
    RESPONSIVE
@@ -899,9 +862,6 @@ footer {
 
   /* ── About stats ── */
   .stat-number { font-size: 1.8rem; }
-
-  /* ── Registration ── */
-  .reg-grid { grid-template-columns: 1fr; }
 
   /* ── Editions intro ── */
   .editions-intro { padding: 16px 18px; }
