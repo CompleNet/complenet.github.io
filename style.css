@@ -1054,8 +1054,11 @@ footer {
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   padding: 28px 24px;
+  text-align: center;
   box-shadow: var(--shadow-sm);
 }
+.reg-info-icon { margin-bottom: 12px; display: flex; justify-content: center; align-items: center; }
+.reg-info-icon img { width: 36px; height: 36px; object-fit: contain; filter: brightness(0) invert(10%) sepia(95%) saturate(3000%) hue-rotate(208deg) brightness(70%); }
 .reg-info-card h3 { font-size: 1rem; color: var(--blue); margin-bottom: 10px; }
 .reg-info-card p  { font-size: 0.88rem; color: var(--text-mid); line-height: 1.6; }
 
