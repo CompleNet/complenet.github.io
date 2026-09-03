@@ -907,6 +907,8 @@ footer {
 .inst-card { display: flex; align-items: center; justify-content: center; }
 .inst-card img { max-height: 72px; max-width: 280px; object-fit: contain; }
 #host-institution .inst-card img { max-height: 94px; max-width: 360px; }
+/* SUNY is a narrower (≈2:1) lockup — nudge it up so it reads at a similar size */
+#supporting-institutions .inst-card img[src$="Suny.png"] { max-height: 90px; }
 
 /* ── Committee: organizing committee hierarchy ── */
 .committee-row {
