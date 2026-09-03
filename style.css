@@ -795,6 +795,7 @@ footer {
 .si-linkedin{ -webkit-mask-image: url('Logos/linkedin-brands-solid.png');       mask-image: url('Logos/linkedin-brands-solid.png'); }
 .si-scholar { -webkit-mask-image: url('Logos/google-scholar-brands-solid.png'); mask-image: url('Logos/google-scholar-brands-solid.png'); }
 .si-globe   { -webkit-mask-image: url('Logos/globe-solid.png');                 mask-image: url('Logos/globe-solid.png'); }
+.si-envelope{ -webkit-mask-image: url('Logos/envelope-regular.png');            mask-image: url('Logos/envelope-regular.png'); }
 .social-link .social-icon  { width: 20px; height: 20px; }
 .speaker-social .social-icon { width: 15px; height: 15px; }
 
@@ -1205,6 +1206,13 @@ footer {
   transition: color var(--trans), transform var(--trans);
 }
 .contact-social-item:hover svg { color: var(--gold-dark); transform: translateY(-3px); }
+.contact-social-item .social-icon {
+  width: 56px;
+  height: 56px;
+  color: var(--blue);
+  transition: color var(--trans), transform var(--trans);
+}
+.contact-social-item:hover .social-icon { color: var(--gold-dark); transform: translateY(-3px); }
 /* handle styled to match .contact-email */
 .contact-handle {
   display: inline-block;
