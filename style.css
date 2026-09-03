@@ -777,6 +777,26 @@ footer {
 }
 .social-link svg { width: 20px; height: 20px; flex-shrink: 0; }
 
+/* Shared social brand icons — single image source in Logos/, recolored per
+   context via CSS masks (footer: white/gold; cards: grey/blue). */
+.social-icon {
+  display: inline-block;
+  flex-shrink: 0;
+  background-color: currentColor;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-position: center;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+}
+.si-bluesky { -webkit-mask-image: url('Logos/square-bluesky-brands-solid.png'); mask-image: url('Logos/square-bluesky-brands-solid.png'); }
+.si-x       { -webkit-mask-image: url('Logos/x-twitter-brands-solid.png');      mask-image: url('Logos/x-twitter-brands-solid.png'); }
+.si-linkedin{ -webkit-mask-image: url('Logos/linkedin-brands-solid.png');       mask-image: url('Logos/linkedin-brands-solid.png'); }
+.si-scholar { -webkit-mask-image: url('Logos/google-scholar-brands-solid.png'); mask-image: url('Logos/google-scholar-brands-solid.png'); }
+.social-link .social-icon  { width: 20px; height: 20px; }
+.speaker-social .social-icon { width: 15px; height: 15px; }
+
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   padding-top: 20px;
