@@ -794,6 +794,7 @@ footer {
 .si-x       { -webkit-mask-image: url('Logos/x-twitter-brands-solid.png');      mask-image: url('Logos/x-twitter-brands-solid.png'); }
 .si-linkedin{ -webkit-mask-image: url('Logos/linkedin-brands-solid.png');       mask-image: url('Logos/linkedin-brands-solid.png'); }
 .si-scholar { -webkit-mask-image: url('Logos/google-scholar-brands-solid.png'); mask-image: url('Logos/google-scholar-brands-solid.png'); }
+.si-globe   { -webkit-mask-image: url('Logos/globe-solid.png');                 mask-image: url('Logos/globe-solid.png'); }
 .social-link .social-icon  { width: 20px; height: 20px; }
 .speaker-social .social-icon { width: 15px; height: 15px; }
 
