@@ -638,6 +638,17 @@ img { display: block; max-width: 100%; }
 .editions-intro-stat .n { font-size: 2rem; font-weight: 800; color: var(--gold); line-height: 1; }
 .editions-intro-stat .l { font-size: 0.72rem; color: rgba(255, 255, 255, 0.62); font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; margin-top: 4px; }
 .editions-intro-divider { width: 1px; height: 48px; background: rgba(255, 255, 255, 0.15); }
+.editions-blurb {
+  max-width: 760px;
+  margin: -16px auto 34px;
+  text-align: center;
+  color: var(--text-mid);
+  font-size: 1.02rem;
+  line-height: 1.6;
+}
+.editions-blurb strong { color: var(--blue); font-weight: 700; }
+.editions-blurb a { color: var(--blue-mid); font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }
+.editions-blurb a:hover { color: var(--blue); }
 
 .editions-grid {
   display: grid;
