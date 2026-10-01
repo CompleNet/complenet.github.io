@@ -57,15 +57,10 @@
       filter: grayscale(100%); border: 2px solid var(--border); background: var(--gray-light);
       display: block; margin: 0 auto 9px;
     }
-    .kn-mono {
-      display: flex; align-items: center; justify-content: center;
-      font-size: 1.6rem; font-weight: 700; color: var(--blue); filter: none;
-    }
     .kn-person-name { font-size: 0.8rem; font-weight: 600; color: var(--text); line-height: 1.25; }
     @media (max-width: 480px) {
       .kn-grid { grid-template-columns: repeat(auto-fill, minmax(84px, 1fr)); gap: 20px 8px; }
       .kn-photo { width: 72px; height: 72px; }
-      .kn-mono { font-size: 1.35rem; }
       .kn-num { margin-left: 0; }
     }
   </style>
@@ -186,11 +181,11 @@
             <figcaption class="kn-person-name">Carmen Cabrera-Arnau</figcaption>
           </figure>
           <figure class="kn-person">
-            <div class="kn-photo kn-mono" aria-hidden="true">PL</div>
+            <img class="kn-photo" src="pastkeynotes/2025-philipp-lorenz-spreen.jpg" alt="Philipp Lorenz-Spreen" loading="lazy">
             <figcaption class="kn-person-name">Philipp Lorenz-Spreen</figcaption>
           </figure>
           <figure class="kn-person">
-            <div class="kn-photo kn-mono" aria-hidden="true">EM</div>
+            <img class="kn-photo" src="pastkeynotes/2025-esteban-moro.jpg" alt="Esteban Moro" loading="lazy">
             <figcaption class="kn-person-name">Esteban Moro</figcaption>
           </figure>
           <figure class="kn-person">
